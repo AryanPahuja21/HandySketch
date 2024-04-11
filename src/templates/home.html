@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hero Section</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
-<div class="hero-container">
-    <div class="hero-image">
-        <img src="heroImage.jpg" alt="Hero Image">
-    </div>
-    <div class="hero-content">
-        <h1>Unleash your creativity like never before with <span class="highlight">Handy Sketch</span>, where art meets innovation. Say goodbye to brushes and pencils – with our revolutionary AI/ML technology, you can paint using just your hands</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="heroImage.jpg" alt="Hero Image" />
+      </div>
+      <div class="hero-content">
+        <h1>
+          Unleash your creativity like never before with
+          <span class="highlight">Handy Sketch</span>, where art meets
+          innovation. Say goodbye to brushes and pencils – with our
+          revolutionary AI/ML technology, you can paint using just your hands
+        </h1>
 
         <div class="button-container">
-            <button class="center-button">Start Drawing</button>
+          <form action="/sketchRoom" method="GET">
+            <button type="submit" class="center-button">Start Drawing</button>
+          </form>
+          <form action="/room" method="GET">
             <button class="center-button">Join with Friends</button>
         </div>
+      </div>
     </div>
-</div>
-
-</body>
+  </body>
 </html>

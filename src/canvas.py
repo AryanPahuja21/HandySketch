@@ -140,7 +140,3 @@ def gen_frames():
                 b'Content-Type: image/jpeg\r\n\r\n' + paint_window_bytes + b'\r\n')
 
         cv2.waitKey(1)
-
-
-if __name__ == "__main__":
-    app.run()
