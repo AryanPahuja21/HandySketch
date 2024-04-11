@@ -57,13 +57,16 @@ def room():
     return render_template('room.html')
 
 @app.route('/sketchRoom')
-def paint_canvas():
-    room = session.get('sketchRoom')
+def sketchRoom():
+    room = session.get('room')
     if room is None or session.get('name') is None or room not in rooms:
         return redirect(url_for('room'))
     
     return render_template('sketchRoom.html')
 
+@app.route('/sketch')
+def sketch():
+    return render_template('sketchRoom.html')
 
 @app.route('/video_feed')
 def video_feed():
