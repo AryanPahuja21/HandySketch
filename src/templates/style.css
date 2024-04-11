@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Silkscreen&display=swap');
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fffaaa;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 525px; /* Adjust this value to your preference */
+    left: 30%;
+    transform: translateX(-20%);
+    text-align: center;
+    color: #5e31ab;
+    font-family: "Silkscreen", sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.center-button {
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #5e31ab;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight:600;
+}
+
+.center-button:hover {
+    background-color: #271841;
+}
+h1 {
+    margin-bottom: 60px;
+   
+}
+.highlight {
+    color: red;
+}
