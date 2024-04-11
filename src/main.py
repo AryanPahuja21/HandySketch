@@ -62,7 +62,7 @@ def room():
     if join is None or session.get('name') is None or join not in joins:
         return redirect(url_for('join'))
     
-    return render_template('room.html')
+    return render_template('room.html', code=join)
 
 @app.route('/sketch')
 def sketch():
