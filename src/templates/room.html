@@ -3,36 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join a Room</title>
+    <title>HandySketch | Draw</title>
   </head>
   <body>
-    <form method="POST">
-      <h1>Join/Create a Room</h1>
-      <div>
-        <label for="name">Enter a NickName: </label>
-        <input
-          type="text"
-          placeholder="Pick a NickName"
-          name="name"
-          value="{{name}}"
-        />
-      </div>
-      <div>
-        <label for="room">Enter a Room Code: </label>
-        <input
-          type="text"
-          placeholder="Enter Room Code"
-          name="code"
-          value="{{code}}"
-        />
-        <button type="submit" name="join">Join Room</button>
-      </div>
-      <button type="submit" name="create">Create a Room</button>
-      {% if error %}
-      <ul>
-        <li>{{error}}</li>
-      </ul>
-      {% endif %}
-    </form>
+    <h3>Room Code: {{room}}</h3>
+    <img src="{{ url_for('video_feed') }}" style="width: 100%" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+      integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      var socketio = io();
+    </script>
   </body>
 </html>
