@@ -97,7 +97,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "tailwindcss -i ./static/src/input.css -o ./static/css/output.css --watch"
+    "tailwind": "tailwindcss -i ./src/static/src/input.css -o ./src/static/css/output.css --watch"
   },
   "keywords": [],
   "author": "",

@@ -25,7 +25,8 @@ def generate_unique_code(length):
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    image_url = "/static/assets/heroImage.jpg"
+    return render_template("home.html", image_url=image_url)
 
 
 @app.route('/join', methods=['POST', 'GET'])
@@ -66,7 +67,7 @@ def room():
 
 @app.route('/sketch')
 def sketch():
-    return render_template('room.html')
+    return render_template('sketch.html')
 
 @app.route('/video_feed')
 def video_feed():
